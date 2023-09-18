@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Piazzolla",serif;
+}
+body{
+    /* background-color: #0097e6; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+html{
+    font-size: 62.5%;
+}
+.row{
+    margin: 0;
+}
+
+.main_menu{
+
+    background-color: #1e272e
+}
+.navbar{
+    color: #fff;
+    background-color: #1e272e;
+    padding: 2rem 0rem;
+    width: auto;
+    
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+.navbar li{
+    margin-left:2rem ;
+}
+.navbar a:hover{
+  color: #0097e6;
+}
+.fa-snowflake{
+transition: all linear;
+animation: rot 2s linear infinite;
+ /* color: #1e272e; */
+ color: #0097e6;
+}
+
+@keyframes rot{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.main_header_left{
+height: 70rem;
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+justify-content: center;
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h1{
+font-size: 4rem;
+margin: 1rem 0 4rem 0;
+text-transform: capitalize;
+}
+.wethy{
+    color: #0097e6;
+}
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    }
+    .main_header_left button{
+
+        border: none;
+      padding: 0.8rem 1.8rem;
+        /* padding-right: 0.3rem; */
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        box-shadow: 0 8px 6px -6px;
+        outline: none;
+    }
+    .main_header_left button:hover{
+        box-shadow: 0 8px 6px -6px #0097e6
+    }
+
+    footer{
+        /* position: fixed; */
+  /* bottom: 0;
+  width: 100%;
+  top: 0;
+        background-color: #1e272e;
+margin-top: auto; */
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e272e;
+    z-index: 999; /* Add a higher z-index to keep it above other content */
+
+
+
+    }
+    footer p{
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        line-height: 5rem;
+        font-size: 1.4rem;
+    }
+
+    /*  yeh niche vala media vala code sirf movile app par chlae uske liye  */
+@media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+          height: 100%;
+          margin: 3rem 0 ;
+    }
+} 
+ 
+.main_header_right figure img{
+filter: drop-shadow(0);    
+}
+.navbar-brand{
+    padding-left: 2rem;
+}
+
+#carouselExampleControls {
+    margin-top: 100px; /* Push the carousel down by 100px */
+    z-index: 1; /* Set the z-index of the carousel to be higher than the navbar */
+  }
+  .img-fluid{
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 4000px;
+height: 500px;
+  }
+ 
+  .figy img{
+   width: 70rem;
+   height: 30rem;
+  
+  }
+  .navbar{
+    position:fixed;
+    z-index: 100;
+  }
+  .tempinformation{
+    width: 40rem;
+    margin-top: 50px;
+    margin-left: 410px;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    /* margin-top: 20px; */
+    padding:10rem;
+    font-family: "Roboto",sans-serif;
+   
+  }
+  .toplayer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    
+  }
+  .toplayer p{
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+
+    font-size: 1.3rem;
+  }
+  .mainlayer{
+width: 100%;
+height: 80%;
+display: flex;
+flex-direction: column;
+padding: 2rem;
+  }
+ 
+  .mainlayer #city_name{
+    color: #bfc1c8;
+    /* padding: 2rem 0; */
+font-weight: 300;
+font-size: 2rem;
+  }
+
+  .mainlayer .middlelayer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 20px;
+  } 
+
+
+  .datahide{
+visibility: hidden;
+    transition: all 0.3s linear;
+  }
+
+  .tempform{
+    width: 60%;
+    position: relative;
+    margin: 10rem auto 1rem;
+    
+  }
+
+  .tempform input[type="text"]{
+
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem ;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size:1.7rem ;
+    border-radius: 3rem;
+  }
+::placeholder{
+    color: #bfc1c8;
+}
+
+
+.tempform input[type="submit"]{
+
+position: absolute;
+top: 5px;
+right: 5px;
+bottom: 5px;
+border: none;
+background-color:#009ad8 ;
+padding: 0 3rem;
+border-radius: 3rem;
+color: white;
+font-size: 1.6rem;
+}
+.tempform input[type="submit"]:hover{
+
+color: #009ad8;
+background-color: #fff;
+
+}
