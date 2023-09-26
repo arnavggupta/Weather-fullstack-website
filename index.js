@@ -18,7 +18,7 @@ app.use(express.static(staticpath));
 // });
 
 app.get("/home",(req,res)=>{
-res.render("index1");
+res.render("index");
 });
 app.get("/about",(req,res)=>{
     // console.log("hyy about");
