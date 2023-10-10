@@ -8,7 +8,7 @@ app.set("view engine","hbs");
 const staticpath=path.join(__dirname,"/public");
 
 
-const port=process.env.PORT || 3000;
+const port=process.env.PORT || 5000;
 app.use(express.static(staticpath));
 
 
@@ -20,6 +20,7 @@ app.use(express.static(staticpath));
 app.get("/home",(req,res)=>{
 res.render("index1");
 });
+
 app.get("/about",(req,res)=>{
     // console.log("hyy about");
     res.render("about1");
@@ -33,5 +34,5 @@ app.get("*",(req,res)=>{
     });
 });
 app.listen(port,()=>{
-    console.log(`Server is started at ${port}`);
+    console.log(`Server is started at ${port}`); 
 })
