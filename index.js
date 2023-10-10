@@ -18,7 +18,7 @@ app.use(express.static(staticpath));
 // });
 
 app.get("/home",(req,res)=>{
-res.render("index1");
+res.render("index");
 });
 
 app.get("/about",(req,res)=>{
@@ -34,5 +34,5 @@ app.get("*",(req,res)=>{
     });
 });
 app.listen(port,()=>{
-    console.log(`Server is started at ${port}`); 
+    console.log(`Server is started at ${port}`);
 })
